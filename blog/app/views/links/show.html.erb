@@ -5,5 +5,12 @@
   <%= @link.url %>
 </p>
 
+<p>
+  <strong>Comments:</strong>
+  <%= @link.comments.last.content %>
+  | at <%= @link.comments.last.updated_at %>
+</p>
+
+
 <%= link_to 'Edit', edit_link_path(@link) %> |
 <%= link_to 'Back', links_path %>
